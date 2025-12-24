@@ -78,7 +78,7 @@ We leveraged AI SDK 6's new patterns:
 │                                                     │                 │
 │                                                     ▼                 │
 │                                         ┌─────────────────────────┐  │
-│                                         │   OpenAI GPT-4o API     │  │
+│                                         │   OpenAI GPT-5.2 API     │  │
 │                                         └─────────────────────────┘  │
 │                                                                       │
 └─────────────────────────────────────────────────────────────────────┘
@@ -361,7 +361,7 @@ export class EvaluatorAgent {
   private temperature: number;
 
   constructor(config?: EvaluatorAgentConfig) {
-    this.model = config?.model || 'gpt-4o';
+    this.model = config?.model || 'gpt-5.2';
     this.temperature = config?.temperature || 0.3;
   }
 
